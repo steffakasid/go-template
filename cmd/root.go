@@ -10,15 +10,15 @@ import (
 	"path"
 	"strings"
 
+	"github.com/getsops/sops/v3/decrypt"
 	logger "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"go.mozilla.org/sops/v3/decrypt"
 )
 
 const (
 	configFileType = "yaml"
-	configFileName = ".clinar"
+	configFileName = ".{ .Values.ProjectName }"
 )
 
 // Constants used in command flags
