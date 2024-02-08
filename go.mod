@@ -1,6 +1,6 @@
 module github.com/steffakasid/go-template/v2
 
-go 1.21.6
+go 1.22.0
 
 require (
 	github.com/getsops/sops/v3 v3.8.1
