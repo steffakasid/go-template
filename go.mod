@@ -1,4 +1,4 @@
-module github.com/steffakasid/go-template/v2
+module github.com/steffakasid/go-template
 
 go 1.22.2
 
