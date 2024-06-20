@@ -5,6 +5,6 @@ dir: "mocks"
 outpkg: "mocks"
 log-level: "info"
 packages:
-  github.com/steffakasid/go-template:
+  github.com/{ .Values.ProjectName }:
     config:
       recursive: True

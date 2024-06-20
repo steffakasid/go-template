@@ -1,20 +1,29 @@
-= AWSCLEAN - Cleanup unused and old AMIs on AWS
+= Go-Template
 
 image:https://img.shields.io/badge/License-Apache%202.0-blue.svg[link="http://www.apache.org/licenses/LICENSE-2.0"]
-image:https://github.com/steffakasid/go-template/actions/workflows/codeql-analysis.yml/badge.svg[link:https://github.com/steffakasid/awsclean/actions/workflows/codeql-analysis.yml]
-image:https://github.com/steffakasid/go-template/actions/workflows/release.yml/badge.svg[link:https://github.com/steffakasid/awsclean/actions/workflows/release.yml]
-image:https://github.com/steffakasid/go-template/actions/workflows/go-test.yml/badge.svg[link:https://github.com/steffakasid/awsclean/actions/workflows/go-test.yml]
+image:https://github.com/steffakasid/go-template/actions/workflows/codeql-analysis.yml/badge.svg[link:https://github.com/steffakasid/go-template /actions/workflows/codeql-analysis.yml]
+image:https://github.com/steffakasid/go-template/actions/workflows/release.yml/badge.svg[link:https://github.com/steffakasid/go-template/actions/workflows/release.yml]
+image:https://github.com/steffakasid/go-template/actions/workflows/go-test.yml/badge.svg[link:https://github.com/steffakasid/go-template/actions/workflows/go-test.yml]
 
-This project is intended to be used as template for new Go projects.
+This project is intended to be used as template for new Go projects. The following placeholders must be replaced:
+
+{ .Values.ProjectName }:: The name of the new project.
+{ .Values.ShortDescription }:: The short description of that project used in the cobra command.
+{ .Values.LongDescription }:: The long description of that project used in the cobra command.
+
+NOTE: Maybe I'll fork `go new` in the future and add some go templating mechanism to add those replacements automatically
+
 
 == Usage
 
-`awsclean [command] [flags]`
+Use link:https://go.dev/blog/gonew[] to initialize a new project.
 
-=== Preqrequisites
-
-awsclean uses already provided credentials in ~/.aws/credentials also it uses the central configuration in ~/.aws/config!
-
+[source, sh]
+----
+$ go install golang.org/x/tools/cmd/gonew@latest
+$ gonew github.com/steffakasid/go-template example.com/myserver
+$ cd ./myserver
+----
 
 === Examples
 

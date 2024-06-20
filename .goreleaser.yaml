@@ -27,7 +27,7 @@ brews:
     # GitHub/GitLab repository to push the formula to
     repository:
       owner: steffakasid
-      name: homebrew-go-template
+      name: homebrew-{ .Values.ProjectName }
       token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}  "
 
     # Git author used to commit to the repository.
@@ -41,8 +41,8 @@ brews:
 
     # Folder inside the repository to put the formula.
     # Default is the root folder.
-    folder: Formula
+    directory: Formula
 
-    homepage: "https://github.com/steffakasid/go-template"
+    homepage: "https://github.com/{ .Values.ProjectName }"
     description: ""
     license: "Apache-2.0"
