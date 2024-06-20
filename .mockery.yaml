@@ -4,7 +4,9 @@ filename: "{{.InterfaceName}}.go"
 dir: "mocks"
 outpkg: "mocks"
 log-level: "info"
+# tag::packagename[]
 packages:
-  github.com/{ .Values.ProjectName }:
+  github.com/steffakasid/go-template:
+  # end::packagename[]
     config:
       recursive: True

@@ -13,6 +13,14 @@ This project is intended to be used as template for new Go projects. The followi
 
 NOTE: Maybe I'll fork `go new` in the future and add some go templating mechanism to add those replacements automatically
 
+Also you should verify the +.mockery.yaml+:
+
+.mockery.yaml
+[source, yaml]
+----
+include::.mockery.yaml[tags=packagename]
+----
+
 
 == Usage
 
