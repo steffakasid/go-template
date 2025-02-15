@@ -6,7 +6,7 @@ toolchain go1.24.0
 
 require (
 	github.com/getsops/sops/v3 v3.9.4
-	github.com/spf13/cobra v1.8.1
+	github.com/spf13/cobra v1.9.0
 	github.com/spf13/viper v1.19.0
 	github.com/steffakasid/eslog v0.3.3
 )
@@ -108,7 +108,7 @@ require (
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.11.0 // indirect
 	github.com/spf13/cast v1.7.1 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/pflag v1.0.6 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
 	github.com/urfave/cli v1.22.16 // indirect
 	go.opencensus.io v0.24.0 // indirect
