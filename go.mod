@@ -2,7 +2,7 @@ module github.com/steffakasid/go-template
 
 go 1.22.7
 
-toolchain go1.24.0
+toolchain go1.24.1
 
 require (
 	github.com/getsops/sops/v3 v3.9.4
