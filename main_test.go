@@ -1,3 +1,3 @@
 package main
 
-//go:generate go run github.com/vektra/mockery/v2@v3.2.1
+//go:generate go run github.com/vektra/mockery/v2@v3.2.2
